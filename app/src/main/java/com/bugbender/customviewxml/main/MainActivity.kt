@@ -7,11 +7,16 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.bugbender.customviewxml.R
 import com.bugbender.customviewxml._1_basic_shapes.BasicShapesFragment
+import com.bugbender.customviewxml._2_drag_circle.DragCircleFragment
+import com.bugbender.customviewxml._2_drag_circle.DragCircleView
 import com.bugbender.customviewxml.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    val items = listOf(MainItem("Basic shapes(line, rectangle, circle)", BasicShapesFragment::class.java))
+    val items = listOf(
+        MainItem("1.Basic shapes(line, rectangle, circle)", BasicShapesFragment::class.java),
+        MainItem("2. Drag circle", DragCircleFragment::class.java)
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,4 +34,3 @@ class MainActivity : AppCompatActivity() {
         binding.mainRecyclerView.adapter = adapter
     }
 }
-
