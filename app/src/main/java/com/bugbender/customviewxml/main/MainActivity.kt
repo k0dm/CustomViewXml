@@ -9,13 +9,15 @@ import com.bugbender.customviewxml.R
 import com.bugbender.customviewxml._1_basic_shapes.BasicShapesFragment
 import com.bugbender.customviewxml._2_drag_circle.DragCircleFragment
 import com.bugbender.customviewxml._2_drag_circle.DragCircleView
+import com.bugbender.customviewxml._3_basic_animation.BasicAnimationFragment
 import com.bugbender.customviewxml.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     val items = listOf(
         MainItem("1.Basic shapes(line, rectangle, circle)", BasicShapesFragment::class.java),
-        MainItem("2. Drag circle", DragCircleFragment::class.java)
+        MainItem("3.Drag circle", DragCircleFragment::class.java),
+        MainItem("2.Basic animation", BasicAnimationFragment::class.java)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
